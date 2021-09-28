@@ -19,7 +19,7 @@ public class AlfredQuotes {
     * Tip: Try using the String.format method for string interpolation in Java.
     */
     public String guestGreeting(String name, String dayPeriod) {
-        return String.format("Good %s, %s. Lovely to see you.", dayPeriod, name);
+        return "Good"+ dayPeriod + "," + name + "Lovely to see you.";
 }
     /* 
     * Inputs: None
@@ -28,7 +28,7 @@ public class AlfredQuotes {
     */
     public String dateAnnouncement() {
         // YOUR CODE HERE
-        return String.format("It is currently %s", new Date());
+        return "It is currently %s" + "," +new Date();
     }
     /*********************************************
     Final Challenge!
