@@ -165,13 +165,31 @@ public class BasicJava {
     public static void squareValues()
     {
         int [] arr = new int[]{1, 5, 10, -2};
-        int x;
-        for(int i = 1; i<arr.length; i++)
+        for( int i = 1; i<arr.length; i++)
         {
             arr[i] = arr[i] * arr[i];
         }
-        System.out.println("Square the values: " + a[i] );
+        System.out.println("Square the values: " + Arrays.toString(arr) );
 
     }
 
+    /* Eliminate Negative Numbers
+    Given any array x, say [1, 5, 10, -2], write a method that replaces any 
+    negative number with the value of 0. When the method is done, x should 
+    have no negative values, say [1, 5, 10, 0]. */
+    public static void elminateNumber()
+    {
+        int [] arr = new int[]{1, 5, 10, -2};
+        int x =0;
+        for( int i = 0; i<arr.length; i++)
+        {
+            if( arr[i]< 0)
+            arr[i]= x;
+        }
+        System.out.println("No negative values: " + Arrays.toString(arr) );
+
+    }
+
+
+    
 }

@@ -20,6 +20,8 @@ public class BasicJavaTester {
         BasicJava.printOddnumberArray();
         BasicJava.printFindAverage();
         BasicJava.greaterThanY();
+        BasicJava.squareValues();
+        BasicJava.elminateNumber();
     }
     
 }
