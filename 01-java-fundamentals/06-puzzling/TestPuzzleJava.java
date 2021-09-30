@@ -1,17 +1,15 @@
 import java.util.ArrayList;
-
 public class TestPuzzleJava 
 {
     public static void main(String[] args)
     {
-        PuzzleJava.getTenRoll();
-        PuzzleJava.getRandomLetter();
-        PuzzleJava puzz = new PuzzleJava();
-        //String pws = puzz.generatePassword();
-        ArrayList<String> pws = puzz.getNewPasswordSet(8);
-        System.out.println(pws);
-       // System.out.println(puzz.shuffle(pws));
-
+        PuzzleJava gen = new PuzzleJava();
+        ArrayList<Integer>randomRolls = gen.getTenRolls();
+        System.out.println(randomRolls);
+        System.out.println(gen.getRandomLetter());
+        System.out.println(gen.generatePassword());
+        System.out.println(gen.getNewPasswordSet(0));
+       
     }
     
 }
