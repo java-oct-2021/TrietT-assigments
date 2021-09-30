@@ -1,4 +1,3 @@
-public class TestPuzzleJava
- {
+public class TestPuzzleJava {
     
 }

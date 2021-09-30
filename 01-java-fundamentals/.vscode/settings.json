@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
         "01-Java First Program",
-        "05-basics"
+        "05-basics",
+        "06-puzzling"
     ]
 }
