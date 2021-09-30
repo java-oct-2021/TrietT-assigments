@@ -22,6 +22,7 @@ public class BasicJavaTester {
         BasicJava.greaterThanY();
         BasicJava.squareValues();
         BasicJava.elminateNumber();
+        BasicJava.maxMinAverage();
     }
     
 }

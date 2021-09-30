@@ -190,6 +190,41 @@ public class BasicJava {
 
     }
 
+    /* Max, Min, and Average
+    Given any array x, say [1, 5, 10, -2], write a method that returns an array
+    with the maximum number in the array, the minimum value in the array, 
+    and the average of the values in the array. The returned array should 
+    be three elements long and contain: [MAXNUM, MINNUM, AVG] */
+    public static void maxMinAverage()
+    {
+        int [] arr = new int[]{1, 5, 10, -2};
+        int max = arr[0];
+        // loop through array
+        for(int i =0; i<arr.length; i++)
+        {
+            if(arr[i] > max)
+            max= arr[i];
+        }
+        System.out.println("Maximum: " + max);
+        int min =arr[0];
+        // loop through array
+        for(int i =0; i<arr.length; i++)
+        {
+            if(arr[i]<min)
+            min= arr[i];
+        }
+        System.out.println("Minimum: " + min);
 
-    
+        int avg =0;
+        int sum = arr[0];
+        for(int i = 1; i<arr.length; i++)
+        {
+            sum = arr[i] + sum;
+        }
+        avg = sum/arr.length;
+        System.out.println("Average: " + avg);
+
+    }
+
+
 }
