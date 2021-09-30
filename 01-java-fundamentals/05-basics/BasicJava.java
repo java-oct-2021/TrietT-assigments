@@ -68,7 +68,7 @@ public class BasicJava {
     //     Arrays.sort(max);
     //     return max[n-1];
     // }
-    public static int printFindMax(int[] max, int i2)
+    public static int[] printFindMax(int[] max, int i2)
     {
         int i;
         int arr = max[0];
@@ -77,7 +77,7 @@ public class BasicJava {
             if(max[i]>arr)
             arr = max[i];
         }
-        return arr;
+        return max;
 
     }
 
@@ -195,36 +195,47 @@ public class BasicJava {
     with the maximum number in the array, the minimum value in the array, 
     and the average of the values in the array. The returned array should 
     be three elements long and contain: [MAXNUM, MINNUM, AVG] */
-    public static void maxMinAverage()
+    public static int[] maxMinAverage(int [] x)
     {
-        int [] arr = new int[]{1, 5, 10, -2};
-        int max = arr[0];
-        // loop through array
-        for(int i =0; i<arr.length; i++)
+        //int [] arr = new int[]{1, 5, 10, -2};
+        //int i;
+        int [] newArrays = new int[3];
+        int max = x[0];
+        for(int i = 1; i<x.length; i++)
         {
-            if(arr[i] > max)
-            max= arr[i];
+            if(x[i]>max)
+            max = x[i];
         }
-        System.out.println("Maximum: " + max);
-        int min =arr[0];
+        newArrays[0] = max;
+    
+        // Find min
+        int min =x[0];
         // loop through array
-        for(int i =0; i<arr.length; i++)
+        for(int i =1; i<x.length; i++)
         {
-            if(arr[i]<min)
-            min= arr[i];
+            if(x[i]<min)
+            min= x[i];
         }
-        System.out.println("Minimum: " + min);
-
+        newArrays[1] = min;
+        // Average 
         int avg =0;
-        int sum = arr[0];
-        for(int i = 1; i<arr.length; i++)
+        int sum = 0;
+        for(int i = 0; i<x.length; i++)
         {
-            sum = arr[i] + sum;
+            sum = x[i] + sum;
         }
-        avg = sum/arr.length;
-        System.out.println("Average: " + avg);
-
+        avg = sum/x.length;
+        newArrays[2] = avg;
+        //System.out.println("Average: " + avg);
+        return newArrays;
     }
+
+    /* Shifting the Values in the Array
+    Given any array x, say [1, 5, 10, 7, -2], write a method that shifts 
+    each number by one to the front. For example, when the method is done, 
+    an x of [1, 5, 10, 7, -2] should become [5, 10, 7, -2, 0]. 
+    Notice that the last number is 0. The method does not need to wrap 
+    around the values shifted out of bounds.*/
 
 
 }
