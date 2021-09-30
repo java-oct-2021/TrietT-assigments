@@ -22,7 +22,6 @@ public class PuzzleJava
         {
             randomInt.add(getRand(20) +1);
         }
-
         return randomInt;
     }
 
