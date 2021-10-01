@@ -22,6 +22,7 @@ public class Hashmap
         trackList.put("track2", "lyrics2");
         trackList.put("track4", "lyrics4");
         trackList.put("track4", "lyrics4");
+        System.out.println("Track pullout: " + trackList.get("track3"));
         Set<String> keys = trackList.keySet();
         for(String key :  keys)
         {
