@@ -13,7 +13,7 @@ import java.util.ArrayList;
 public class ListofExceptions 
 {
     public static void main(String[] args) {
-        try{
+        
             ArrayList<Object> myList = new ArrayList<Object>();
             myList.add("13");
             myList.add("hello world");
@@ -22,13 +22,13 @@ public class ListofExceptions
 
             for(int i = 0; i < myList.size(); i++) 
             {
-                Integer value = (Integer) myList.get(i);
+                try{
+                    Integer value = (Integer) myList.get(i);
+                }
+                catch(ClassCastException e){
+                    System.out.println(e);
+                    }
             }
-
-        } catch(Exception e){
-            System.out.println("Error");
+         
         }
-        
-    }
-    
 }
