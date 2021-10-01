@@ -1,8 +1,9 @@
 {
     "java.project.sourcePaths": [
+        "07-map-of-the-hashmatique",
         "06-puzzling",
         "05-basics",
         "01-Java First Program",
-        "07-map-of-the-hashmatique"
+        "08-lists-of-exceptions"
     ]
 }
