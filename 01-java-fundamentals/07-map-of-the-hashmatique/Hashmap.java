@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.*;
 
 /*
 Objectives:
@@ -21,11 +22,11 @@ public class Hashmap
         trackList.put("track2", "lyrics2");
         trackList.put("track4", "lyrics4");
         trackList.put("track4", "lyrics4");
-        set<String> keys = trackList.keySet();
+        Set<String> keys = trackList.keySet();
         for(String key :  keys)
         {
-            System.out.println("Track name: " + key);
-            System.out.println("Lyrics name: " + trackList.get(key));
+            System.out.println("Track: " + key + " Lyrics: " + trackList.get(key) );
+            // System.out.println("Lyrics name: " + trackList.get(key));
         }
 
     }
