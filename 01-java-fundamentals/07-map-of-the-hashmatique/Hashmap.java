@@ -20,7 +20,7 @@ public class Hashmap
         HashMap <String, String> trackList = new HashMap<String, String>();
         trackList.put("track1", "lyrics1");
         trackList.put("track2", "lyrics2");
-        trackList.put("track4", "lyrics4");
+        trackList.put("track3", "lyrics3");
         trackList.put("track4", "lyrics4");
         System.out.println("Track pullout: " + trackList.get("track3"));
         Set<String> keys = trackList.keySet();
