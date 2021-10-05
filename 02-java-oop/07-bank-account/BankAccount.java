@@ -8,7 +8,7 @@ public class BankAccount
 {
     private double checkingBalance; //attribute: double checking blank
     private double savingBalance; //attribute: double saving blank
-    private String accountNumber;
+    private String accountNumber; //attribute: account number
     private static int numberOfAct;
     private static double totalMoney;
     public static ArrayList<BankAccount> bankAccounts = new ArrayList<BankAccount>();
