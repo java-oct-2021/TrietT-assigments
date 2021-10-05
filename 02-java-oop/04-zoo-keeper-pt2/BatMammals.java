@@ -13,7 +13,7 @@ public class BatMammals {
         System.out.println("Energy Level: " + this.energyLevel);
         return this.energyLevel;
     }
-        
+    
 }
     
     

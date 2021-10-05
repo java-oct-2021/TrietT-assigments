@@ -15,7 +15,7 @@ public class Bat extends BatMammals {
      */
     public void eatHumans()
     {
-        System.out.println("the sound a bat taking off");
+        System.out.println("the sound of eating two humans");
         this.energyLevel +=25;
         this.displayEnergy();
         //return this;
@@ -25,7 +25,7 @@ public class Bat extends BatMammals {
      */
     public void attackTown()
     {
-        System.out.println("the sound a bat taking off");
+        System.out.println("the sound attacking three towns");
         this.energyLevel +=100;
         this.displayEnergy();
         //return this;

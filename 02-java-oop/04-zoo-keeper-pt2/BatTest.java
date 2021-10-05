@@ -13,7 +13,6 @@ public class BatTest
         batTaking.eatHumans();
         batTaking.fly();
         batTaking.fly();
-
     }
     
 }
