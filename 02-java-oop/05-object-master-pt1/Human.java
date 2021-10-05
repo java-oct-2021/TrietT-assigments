@@ -1,10 +1,10 @@
 public class Human 
 {
     //Attributes / File
-    private int strength =3;
-    private int stealth =3;
-    private int intelligence =3;
-    private int health =100;
+    private int strength;
+    private int stealth;
+    private int intelligence;
+    private int health;
 
     public int getStrength()
     {
@@ -42,9 +42,17 @@ public class Human
         health = healthNum;
     }
 
-    public void attackHuman()
+    public Human()
     {
-        
+        this.stealth=3;
+        this.strength=3;
+        this.intelligence=3;
+        this.health=100;
+    }
+    public void attack(Human human)
+    {
+        human.health -=this.strength;
+        System.out.println("Human attack human: " + this.strength + "\nHuman health: " + human.health);
     }
 
 }
