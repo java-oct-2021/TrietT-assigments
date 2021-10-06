@@ -11,7 +11,7 @@ public class iPhone extends Phone implements Ringable
     public String ring()
     {
         String ringer = getRingTone();
-        return "ringer";
+        return ringer;
 
     }
     @Override
