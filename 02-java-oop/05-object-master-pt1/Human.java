@@ -2,9 +2,9 @@ public class Human
 {
     //Attributes / File
     private int strength;
-    private int stealth;
+    protected int stealth;
     private int intelligence;
-    private int health;
+    protected int health;
 
     public int getStrength()
     {
