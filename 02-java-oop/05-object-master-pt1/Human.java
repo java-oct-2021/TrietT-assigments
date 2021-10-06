@@ -3,7 +3,7 @@ public class Human
     //Attributes / File
     private int strength;
     protected int stealth;
-    private int intelligence;
+    protected int intelligence;
     protected int health;
 
     public int getStrength()
