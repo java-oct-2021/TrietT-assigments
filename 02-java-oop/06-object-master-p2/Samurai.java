@@ -15,5 +15,8 @@ public class Samurai extends Human {
     public void meditate() {
         this.health = Samurai.defaultHealth;
     }
-    public static void
+    public static void display()
+    {
+        
+    }
 }
