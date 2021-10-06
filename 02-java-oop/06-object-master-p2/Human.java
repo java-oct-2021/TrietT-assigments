@@ -1,10 +1,10 @@
 public class Human 
 {
     //Attributes / File
-    private int strength;
-    private int stealth;
-    private int intelligence;
-    private int health;
+    protected int strength;
+    protected int stealth;
+    protected int intelligence;
+    protected int health;
 
     public int getStrength()
     {
