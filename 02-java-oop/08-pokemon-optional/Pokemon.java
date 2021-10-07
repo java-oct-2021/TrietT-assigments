@@ -11,12 +11,12 @@ public class Pokemon
     protected String name;
     protected String type;
     protected int health;
-    protected in count;
-    public Pokemon(String name, String type, int health)
+    protected int count;
+    public Pokemon(String name, int health, String type)
     {
         this.name = name;
         this.type = type;
-        this.health = type;
+        this.health = health;
     }
 
     public void attackPokemon(Pokemon pokemon)
@@ -25,30 +25,37 @@ public class Pokemon
     }
     public String getName()
     {
-        return name;
+        return this.name;
     }
 
     public String getType()
     {
-        return type;
+        return this.type;
     }
     public int getHealth()
     {
-        return health;
+        return this.health;
     }
-    public void setName(String namePoke)
+    public void setName(String name)
     {
-        name = namePoke;
+        this.name = name;
 
     }
-    public void setType(String typePoke)
+    public void setType(String type)
     {
-        type = typePoke;
+        this.type = type;
         
     }
-    public void setHealth(String healthPoke)
+    public void setHealth(int health)
     {
-        health = healthPoke;
+        this.health = health;
     }
+    public void setCount(int amount) {
+		count += amount;
+	}
+	
+	public int getCount() {
+		return count;
+	}
     
 }
