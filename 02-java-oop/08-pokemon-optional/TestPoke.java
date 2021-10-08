@@ -1,4 +1,4 @@
-public class TestPole {
+public class TestPoke {
     public static void main(String[] args) {
         Pokedex dex = new Pokedex();
         Pokemon p1 = dex.createPokemon("Ho-OH ", 100, "type1 ");
