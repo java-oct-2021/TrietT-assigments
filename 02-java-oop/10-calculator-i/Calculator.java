@@ -4,10 +4,7 @@ public class Calculator implements java.io.Serializable
     private double operandTwo = 0;
     private char operation;
     private double result = 0;
-    public Calculator()
-    {
 
-    }
     public void setOperandOne( double operandOne)
     {
         this.operandOne = operandOne;
