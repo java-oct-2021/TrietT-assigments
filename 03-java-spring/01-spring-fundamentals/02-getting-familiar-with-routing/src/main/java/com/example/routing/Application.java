@@ -18,9 +18,19 @@ public class Application {
 		return "Hello client! How are you doing?";
 	}
 	
-	@RequestMapping("/random")
-	public String random()
+	@RequestMapping("/coding")
+	public String coding()
 	{
-		return "Spring Boot is great! So easy to just respond with strings";
+		return "Hello Coding Dojo!";
+	}
+	@RequestMapping("/python")
+	public String python()
+	{
+		return "Python/Django was awesome!";
+	}
+	@RequestMapping("/python")
+	public String java()
+	{
+		return "Java/Spring is better!";
 	}
 }
