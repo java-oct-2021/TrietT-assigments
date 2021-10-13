@@ -7,7 +7,7 @@
 <title>Hello Human</title>
 </head>
 <body>
-	<h1>Hello "${name}"/>!</h1>
+	<h1>Hello "${name}"</h1>
 	<h2>Welcome to SpringBoot!</h2>
 </body>
 </html>
