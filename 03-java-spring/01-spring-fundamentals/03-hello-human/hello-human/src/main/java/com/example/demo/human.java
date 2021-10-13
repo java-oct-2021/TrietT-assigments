@@ -11,7 +11,7 @@ public class human {
 	@RequestMapping("/")
 	public String index(@RequestParam(value="name", required=false) String searchQuery,  Model model) {
         if(searchQuery != null){
-//            model.addAttribute("name", searchQuery);
+        model.addAttribute("name", searchQuery);
             return "NewFile.jsp";
         }
         else
