@@ -1,0 +1,1 @@
+alerts("This is the time template");

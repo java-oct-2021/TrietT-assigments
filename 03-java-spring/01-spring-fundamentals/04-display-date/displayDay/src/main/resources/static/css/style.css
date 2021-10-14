@@ -1,0 +1,22 @@
+@charset "ISO-8859-1";
+body {
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+top{
+    width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+}
+
+textd
+{
+	color: blue;
+}
+textt
+{
+	color: green;
+}
