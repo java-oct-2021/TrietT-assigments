@@ -1,0 +1,23 @@
+@charset "ISO-8859-1";
+
+.nav
+{
+	width: 540px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+	
+}
+
+.textd
+{
+	text-align: center;
+	color: blue;
+}
+.textt
+{
+	text-align: center;
+	color: green;
+}
