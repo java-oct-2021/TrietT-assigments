@@ -70,7 +70,7 @@ public class Users {
     		return "redirect:/login";
     	} else {
     		model.addAttribute("user", uServ.getById(userId));
-    		return "home.jsp";    		
+    		return "homePage.jsp";    		
     	}
     }
     @RequestMapping("/logout")
