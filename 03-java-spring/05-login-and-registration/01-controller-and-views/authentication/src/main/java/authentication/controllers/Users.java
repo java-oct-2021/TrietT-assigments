@@ -17,10 +17,10 @@ import authentication.services.UserService;
 //imports removed for brevity
 @Controller
 public class Users {
-	private final UserService uServ;
+	private final UserService uService;
     
     public Users(UserService userService) {
-        this.uServ = userService;
+        this.uService = userService;
     }
     
     @RequestMapping("/registration")
@@ -39,11 +39,10 @@ public class Users {
         // else, save the user in the database, save the user id in session, and redirect them to the /home route
     	if(result.hasErrors()) {
     		return "registrationPage.jsp";
-    	} else if(uServ.getByEmail(user.getEmail()) != null) {
-    		System.out.println("duplicate email: "+user.getEmail());
+    	} else if(uService.getByEmail(user.getEmail()) != null) {
     		return "registrationPage.jsp";
     	} else {
-    		User newUser = uServ.add(user);
+    		User newUser = uService.add(user);
     		session.setAttribute("userId", newUser.getId());
     		return "redirect:/home";
     	}
@@ -53,9 +52,8 @@ public class Users {
     public String loginUser(@RequestParam("email") String email, @RequestParam("password") String password, Model model, HttpSession session) {
         // if the user is authenticated, save their user id in session
         // else, add error messages and return the login page
-    	if(uServ.authenticatUser(email, password)) {
-    		System.out.println("authenticated here!");
-    		session.setAttribute("userId", uServ.getByEmail(email).getId());
+    	if(uService.authenticatUser(email, password)) {
+    		session.setAttribute("userId", uService.getByEmail(email).getId());
     		return "redirect:/home";
     	} else {
     		return "redirect:/login";
@@ -69,7 +67,7 @@ public class Users {
     	if(userId == null) {
     		return "redirect:/login";
     	} else {
-    		model.addAttribute("user", uServ.getById(userId));
+    		model.addAttribute("user", uService.getById(userId));
     		return "homePage.jsp";    		
     	}
     }
